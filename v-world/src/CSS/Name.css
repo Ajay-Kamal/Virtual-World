@@ -1,0 +1,98 @@
+.welcome {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 110px;
+  font-family: "Baloo Bhai 2";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.head-1 {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 110px;
+  text-transform: capitalize;
+}
+
+.head-2 {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  position: absolute;
+  top: 90px;
+  left: 210px;
+}
+
+.foot {
+  color: #fff;
+  text-align: center;
+  font-family: "Baloo Bhai 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 27px */
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 230px;
+  margin: auto;
+  left: 130px;
+}
+
+.tail {
+  color: #d9d9d9;
+  text-align: center;
+  font-family: "Baloo Bhai 2";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 18.9px */
+  letter-spacing: 0.28px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 270px;
+  width: 90%;
+}
+
+.name-comp {
+  position: relative;
+  top: 25%;
+  width: 50%;
+  margin: auto;
+}
+
+.foot-btn {
+  cursor: pointer;
+  width: 350px;
+  position: absolute;
+  top: 350px;
+  left: 180px;
+  padding: 15px;
+  color: #2b2b2b;
+  text-align: center;
+  font-family: "Baloo Bhai 2";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 99.557%; /* 19.911px */
+  border-radius: 10px;
+  background: #fff;
+  border: none;
+  outline: none;
+}
+

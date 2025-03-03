@@ -1,13 +1,15 @@
 import React from "react";
 import "./index.css";
 import Navbar from "./components/Navbar";
+import Name from "./components/Name";
 
 const Home = () => {
   return (
     <div className="home-page">
-      <img src="v-world/public/logo.svg" alt="">  
-        <Navbar />
-      </img>
+      <Navbar />
+      <Name/>
+      <div className="bg-grad"></div>
+      <img src="./src-bg.png" alt="bg-img" className="bg-img" />
     </div>
   );
 };

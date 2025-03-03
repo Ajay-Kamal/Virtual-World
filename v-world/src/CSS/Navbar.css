@@ -1,5 +1,103 @@
-.nav-bar{
+@font-face {
+  font-family: 'sf'; /* Name you want to give the font */
+  src: url('../fonts/SFPRODISPLAYREGULAR.woff2') format('woff2'), /* Modern browsers */
+       url('../fonts/SFPRODISPLAYREGULAR.woff') format('woff'); /* Older browsers */
+  font-weight: normal; /* Specify the font weight */
+  font-style: normal; /* Specify the font style */
+}
+
+/* Navbar Styles */
+.nav-bar {  
   width: 100vw;
-  height: 20%;
-  
+  height: 10vh; /* Use viewport height for responsiveness */
+  background-color: rgba(255, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out logo, nav-mid, and sign-up */
+  padding: 0 50px; /* Add padding for better spacing */
+}
+
+.logo {
+  width: auto; /* Fixed width for logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.sign-up {
+  width: 100px; /* Fixed width for button */
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up button {
+  display: flex;
+  padding: 4px 14px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #fff;
+  background-color: #ffffff00;
+  color: #fff;
+  font-family: 'sf';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  box-shadow: 0px 0.5px 1.5px 0px rgba(54, 122, 246, 0.25);
+}
+
+.nav-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 69px; /* Space between nav items */
+}
+
+.nav-mid li {
+  list-style-type: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Baloo Bhai 2";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}   
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 80px; /* Smaller logo for mobile */
+    margin-bottom: 10px;
+  }
+
+  .nav-mid {
+    flex-direction: column; /* Stack nav items vertically */
+    gap: 10px;
+    width: 100%;
+  }
+
+  .sign-up {
+    width: 80%; /* Full-width button on mobile */
+    margin-top: 10px;
+  }
 }

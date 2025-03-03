@@ -4,6 +4,53 @@
   box-sizing: border-box;
 }
 
-.home-page{
+.home-page {
   height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes zoomAndPan {
+  0% {
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  20% {
+    transform-origin: 20% 30%;
+    transform: scale(1.63);
+  }
+  40% {
+    transform: scale(1.73);
+    transform-origin: 50% 70%;
+  }
+  60% {
+    transform: scale(1.63);
+    transform-origin: 80% 40%;
+  }
+  80% {
+    transform: scale(1.73);
+    transform-origin: 60% 20%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: center center;
+  }
+}
+
+.bg-img {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  animation: zoomAndPan 10s infinite; /* Adjust timing as needed */
+  overflow: hidden;
+}
+
+.bg-grad {
+  width: 1469px;
+  height: 201px;
+  flex-shrink: 0;
+  background: #000;
+  filter: blur(96.5999984741211px);
+  position: absolute;
+  bottom: -10%;
 }
